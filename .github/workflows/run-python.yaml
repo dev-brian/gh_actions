@@ -12,5 +12,5 @@ jobs:
         run: ls -la
       - name: Definir variable
         run: echo "USERNAME=${{ github.actor }}">> $GITHUB_ENV
-      # - name: Ejecuta Script
-      #   run: python app.py
+      - name: Ejecuta Script
+        run: python app.py
