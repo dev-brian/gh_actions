@@ -4,5 +4,13 @@ jobs:
   hello_world:
     runs-on: ubuntu-latest
     steps:
-        run: echo "Hello World"
-        run: echo "Test my first workflow"
+      - run: echo "Hello World"
+      - run: echo "Test my first workflow"
+      - run: echo "SIUUUUU🐐!!!"
+      - name: Crea unos archivos
+        run: touch file1.txt
+      - name: Guarda el listado de archivos
+        run: ls -la > file2.txt
+      - run: echo "Agrego una línea a file2.txt" >> file2.txt
+      - run: cat file2.txt
+      - run: ls -la
