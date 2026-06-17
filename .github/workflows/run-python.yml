@@ -7,7 +7,7 @@ jobs:
       - name: Inicio
         run: echo "Comienza Action"
       - name: Clona Repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Muestra archivos
         run: ls -la
       - name: Ejecuta Script
