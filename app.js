@@ -1,10 +1,7 @@
 function main() {
-    console.log("Hello World! runs on Actions");
+    console.log("Hello World! runs on Actions desde JavaScript");
     for (let i = 0; i < 10; i++) {
-        console.log("XD".repeat(i));
-
-        const name = process.env.USERNAME;
-        console.log(`Hello ${name}!`);
+        console.log("🇲🇽🐐🇵🇹".repeat(i));
     }
 }
 
