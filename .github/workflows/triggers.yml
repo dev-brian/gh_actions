@@ -1,0 +1,26 @@
+name: Triggers
+
+on:
+  push:
+    branches:
+      - 'main'
+      - 'releases/**'
+    paths:
+      - '**.js'
+  pull_request:
+    types: [opened, labeled]
+    branches:
+      - 'releases/**'
+    paths:
+      - '**.js'
+  issues:
+    types: [opened, edited, closed]
+
+jobs:
+  run-messages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Message 1
+        run: echo "Message 1"
+      - name: Message 2
+        run: echo "Message 2"
